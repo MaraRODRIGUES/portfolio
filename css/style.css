@@ -1,126 +1,59 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+* { 
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0 auto; 
 }
-
-li , a {
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-    }
-
-.topbar ul li {
-    display: inline-block;
-    }
-
-nav.topbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    background-color: rgba(0,0,0,.2);
-    padding: 10px 0;
-    width: 100%;
-}
-
 
 header {
-    background: url(../img/bg-banner.png);
+    background-image: url(../img/gato-background.jpg);
+    background-position-y: center;
     background-size: cover;
-    min-height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    min-height: 45vh;
+    background-repeat: none;  
+    display: flex; 
     align-items: center;
-    }
+    justify-content: space-between;    
+}
 
-h1 {
+@media (max-width: 768px) {
+    header {
+        height: 45vh;
+        background-size: 100%;
+        background-repeat: none;
+        width: 1100px;
+        }
+ 
+
+header h1 {
     color: white;
-    font-size: 36px;
+    font-size: 90px;
+    text-align: center;
+    margin: 20px;
 }
 
 header p {
     color: white;
-    font-size: 18px;
-    font
-}
-
-header a {
-    text-align: center;
-    display: inline-block;
-    width: 300px;
-    margin-top: 30px;
-    background-color: goldenrod;
-    color: black;
-    padding: 20px 20px;
-    font-weight: bold;
-    text-decoration: none;
     font-size: 20px;
-    text-transform: uppercase;
-    border-radius: 15px;
-    }
+    text-align: left;
+    width: 80%;
+    margin: 30px
+}
 
-.sobre > div {
+main div {
     display: flex;
+    padding: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.desc-sobre {
-    max-width: 40%;
-    margin-left: 30px;
-}
-
-.entendi {
-   width: 600px;
-   margin: 20px auto;
-   padding: 0 20px 20px 20px;
-}
-
-.servicos {
-    margin-top: 40px;
-    background-image: url(../img/bg-servicos.png);
-    background-size: cover;
+main {
+    margin-top:20px;
+    width: 800px;
     text-align: center;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    }
-
-.servicos h2 {
-    margin: 10px 0;
+    margin-left: 250px;
 }
 
-.cards {
-    display: flex;
-}
+main img {
+    width: 230px;
+    height: 220px;
 
-.cards > div {
-    background-color: rgb(0, 140, 255);
-    text-align: center;
-    padding: 20px 20px 20px 20px;
-}
-
-.cards a {
-    text-align: center;
-    display: inline-block;
-    width: 200px;
-    margin-top: 20px;
-    background-color: goldenrod;
-    color: black;
-    padding: 15px 15px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    border-radius: 15px;
-}
-
-h2 {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.curiosidades>span {
-    display: inline-block;
 }
